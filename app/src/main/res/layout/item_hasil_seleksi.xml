@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_card"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/namaHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#E08A0F" />
+
+    <TextView
+        android:id="@+id/skorHasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skor"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#E08A0F"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/namaHasil"/>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Satus"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="#E08A0F"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/skorHasil"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/status"
+        android:id="@+id/cetak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cetak"
+        android:backgroundTint="#FF9800"
+        android:background="@drawable/border_button_orange"/>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:background="@drawable/bg_gradient">
+
+    <ImageView
+        android:id="@+id/bckbck"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/bckbck"
+        android:layout_marginTop="20dp"
+        android:padding="24dp"
+        android:background="@drawable/border_card">
+
+        <!-- Baris: Judul Posisi + Tombol Lihat Pendaftar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Staff IT"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <Button
+                android:id="@+id/btnLihatPendaftarForAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Lihat Pendaftar"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/perusahaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PT Teknologi Nusantara"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="#666666"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi: Antang"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Tanggal -->
+        <TextView
+            android:id="@+id/periode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Periode: 1 - 15 April 2025"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi pekerjaan:"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kualifikasi"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/kualifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnMulaiSeleksiforAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Mulai Seleksi"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50" />
+
+        <TextView
+            android:id="@+id/txtNamaBatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/lihatHasil"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Lihat Hasil"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50" />
+
+            <Button
+                android:id="@+id/btnAkhiriLowongan"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Akhiri Seleksi"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnbackDaftarLowonganForAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Kembali"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/errors"/>
+    </LinearLayout>
+</RelativeLayout>

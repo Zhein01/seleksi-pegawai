@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Tombol Kembali -->
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow" />
+
+    <!-- Container Konten -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/back"
+        android:layout_margin="15dp"
+        android:padding="24dp"
+        android:background="@drawable/border_card">
+
+        <!-- Input Posisi -->
+        <EditText
+            android:id="@+id/editNamaLowongan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Posisi"
+            android:text="Staff IT"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="#CCCCCC"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Perusahaan -->
+        <EditText
+            android:id="@+id/editPerusahaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Perusahaan"
+            android:text="PT Teknologi Nusantara"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:backgroundTint="#CCCCCC"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Lokasi -->
+        <EditText
+            android:id="@+id/editLokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lokasi"
+            android:text="Antang"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:backgroundTint="#CCCCCC"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Periode -->
+        <EditText
+            android:id="@+id/editPeriode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Periode"
+            android:text="1 - 15 April 2025"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:backgroundTint="#CCCCCC"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Deskripsi -->
+        <EditText
+            android:id="@+id/editDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deskripsi Pekerjaan"
+            android:text="Bertanggung jawab atas pengembangan, pemeliharaan, dan dukungan sistem informasi internal perusahaan."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:backgroundTint="#CCCCCC"
+            android:minLines="4"
+            android:gravity="top"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Input Kualifikasi -->
+        <EditText
+            android:id="@+id/editKualifikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kualifikasi"
+            android:text="- Minimal D3/S1 Teknik Informatika\n- Pengalaman 1 tahun di bidang yang sama\n- Menguasai PHP/Java/Kotlin menjadi nilai plus"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:backgroundTint="#CCCCCC"
+            android:minLines="4"
+            android:gravity="top"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btnSimpanPerubahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Perubahan"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Tombol Kembali -->
+        <Button
+            android:id="@+id/btnBatal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF9800" />
+    </LinearLayout>
+</RelativeLayout>

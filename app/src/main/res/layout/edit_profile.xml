@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:id="@+id/layoutEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_button_orange"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Edit Profil"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/edtNik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Nik"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/border_button_orange"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtNamaProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@drawable/border_button_orange"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_button_orange"
+            android:layout_marginBottom="16dp"
+            android:hint="Alamat" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJkl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/border_button_orange"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki" />
+
+            <RadioButton
+                android:id="@+id/radioPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/edtTeleponprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:hint="No. Telepon"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@drawable/border_button_orange"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSimpanprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Simpan Perubahan"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/backprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Kembali"
+            android:backgroundTint="#FFA700"
+            android:textColor="#FFFFFF"
+            android:padding="12dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/error"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/border_card">
+
+    <!-- Baris pertanyaan-->
+    <TextView
+        android:layout_toLeftOf="@id/opsi"
+        android:id="@+id/txtPertanyaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apa itu Kotlin?"
+        android:textSize="16sp"
+        android:textColor="#000000" />
+
+    <!-- Pilihan Jawaban -->
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroupJawabana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioAa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Bahasa Pemrograman" />
+
+        <RadioButton
+            android:id="@+id/radioBa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Database" />
+
+        <RadioButton
+            android:id="@+id/radioCa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Framework" />
+
+        <RadioButton
+            android:id="@+id/radioDa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. Aplikasi Musik" />
+    </RadioGroup>
+</LinearLayout>

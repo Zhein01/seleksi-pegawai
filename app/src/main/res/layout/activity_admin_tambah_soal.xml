@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_card"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Soal"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Pertanyaan -->
+        <EditText
+            android:id="@+id/editPertanyaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan pertanyaan"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pilihan Jawaban -->
+        <EditText
+            android:id="@+id/editJawabanA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jawaban A"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editJawabanB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jawaban B"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editJawabanC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jawaban C"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editJawabanD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jawaban D"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editKunciJawaban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kunci Jawaban (misal: A)"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnSimpanSoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:text="Oke"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#4CAF50" />
+    </LinearLayout>
+</ScrollView>

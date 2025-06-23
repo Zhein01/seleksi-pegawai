@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.LogoutFragment"
+    android:background="@drawable/bg_gradient">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_card"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgFotoProfil"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_gambar_profil"
+            android:src="@drawable/gambar_profil"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:text="Logout"
+            android:backgroundTint="#F8861C"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</FrameLayout>

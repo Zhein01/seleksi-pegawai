@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:progress="30"
+        android:progressTint="#FF9800" />
+
+    <TextView
+        android:id="@+id/txtNomorSoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soal 1 dari 10"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="16dp" />
+
+    <!-- Soal -->
+    <TextView
+        android:id="@+id/txtSoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apa kepanjangan dari CPU?"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_below="@id/txtNomorSoal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Pilihan Jawaban -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txtSoal">
+
+        <RadioButton
+            android:id="@+id/rbA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Central Processing Unit"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rbB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Control Program Utility"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rbC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Central Power Unit"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rbD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. Central Programming Unit"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+    </RadioGroup>
+
+    <!-- Tombol Selanjutnya -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:text="Selanjutnya"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/radioGroup" />
+
+</RelativeLayout>
