@@ -25,6 +25,8 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var editNama: EditText
     private lateinit var editAlamat: EditText
     private lateinit var editHp: EditText
+    private lateinit var editTmp: EditText
+    private lateinit var editTgl: EditText
     private lateinit var editUsername: EditText
     private lateinit var editPassword: EditText
     private lateinit var spinnerGender: Spinner
@@ -41,6 +43,8 @@ class RegisterActivity : AppCompatActivity() {
         editNama = findViewById(R.id.editNama)
         editAlamat = findViewById(R.id.editAlamat)
         editHp = findViewById(R.id.editHp)
+        editTmp = findViewById(R.id.editTmp)
+        editTgl = findViewById(R.id.editTgl)
         editUsername = findViewById(R.id.editUsername)
         editPassword = findViewById(R.id.editPasswordrgs)
         spinnerGender = findViewById(R.id.spinnerGender)
@@ -71,6 +75,8 @@ class RegisterActivity : AppCompatActivity() {
         val alamat = editAlamat.text.toString()
         val jenisKelamin = spinnerGender.selectedItem.toString()
         val noHp = editHp.text.toString()
+        val tmpLahir = editTmp.text.toString()
+        val tglLahir = editTgl.text.toString()
         val username = editUsername.text.toString()
         val password = editPassword.text.toString()
 
@@ -81,7 +87,7 @@ class RegisterActivity : AppCompatActivity() {
             return
         }
 
-        val request = RegisterRequest(nik, nama, alamat, jenisKelamin, noHp, username, password)
+        val request = RegisterRequest(nik, nama, alamat, jenisKelamin, noHp, tmpLahir, tglLahir, username, password)
 
         ApiClient.instance.registerUser(request).enqueue(object : Callback<RegisterResponse> {
             override fun onResponse(call: Call<RegisterResponse>, response: Response<RegisterResponse>) {
